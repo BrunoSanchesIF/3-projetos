@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Média</title>
+</head>
+<body>
+    <script language="javascript">
+        function Resultado()
+        {
+            var valor1, valor2, valor3, valor4, media;
+            valor1 = document.Projeto_1.valor1.value;
+            valor2 = document.Projeto_1.valor2.value;
+            valor3 = document.Projeto_1.valor3.value;
+            valor4 = document.Projeto_1.valor4.value;
+            valor1 = parseFloat(valor1);
+            valor2 = parseFloat(valor2);
+            valor3 = parseFloat(valor3);
+            valor4 = parseFloat(valor4);
+            media = parseFloat(media);
+            media = (valor1 + valor2 + valor3 + valor4) / 4;
+            window.alert("A média desses valores é: " + media);
+
+
+        }
+    </script>
+        <form name="Projeto_1">
+                Digite o primeiro valor: <input type="text" name="valor1"><br>
+                Digite o segundo valor: <input type="text" name="valor2"><br>
+                Digite o terceiro valor: <input type="text" name="valor3"><br>
+                Digite o quarto valor: <input type="text" name="valor4"><br>
+                <input type="button" value="Enviar" onclick="Resultado();">
+        </form>  
+</body>
+</html>
